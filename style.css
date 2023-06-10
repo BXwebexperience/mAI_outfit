@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  background-color: rgb(243, 242, 241);
+  text-align: center;
+  height: 100%;
+}
+header{
+  background-color: #b21f12;
+  padding: 32px;
+  color: white;
+}
+.container{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 32px 12px;
+}
+.colors{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+.color{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(243, 242, 241);
+  font-size: 50px;
+  line-height: 2;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: pop-effect 0.4s ease-out;
+}
+.scelta{
+  display: flex;
+  border: 2px solid black;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.slot {
+  width: 90px;
+  height: 90px;
+  padding: 12px;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  background-color: rgb(243, 242, 241);
+}
+#second-child{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+button {
+  background-color: #b21f12;
+  padding: 12px 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+}
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(243, 242, 241);
+}
+.loading-message{
+  font-size: 24px;
+  font-weight: 700;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 24px;
+  background-color: rgb(243, 242, 241);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.modal-box{
+  position: relative;
+  max-width: 400px;
+  margin: 24px auto;
+  background-color: rgb(243, 242, 241);
+  border: 2px solid black;
+  animation: pop-effect 0.3s ease-out;
+}
+.modal-image{
+  background-image: url('images/loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 250px;
+}
+.modal-content{
+  padding: 16px;
+  text-align: left;
+}
+.modal-close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 36px;
+  width: 36px;
+  background-color: rgb(243, 242, 241);
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.modal-close img{
+  width: 20px;
+  height: 20px;
+}
+.hidden{
+  display: none;
+}
